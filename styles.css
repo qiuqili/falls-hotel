@@ -56,11 +56,13 @@ body {
   font-family: Nunito;
 }
 
-li {
-  display: inline;
-  float: right;
-  margin-right: 30px;
-  font-weight: 700;
+ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul li {
+  padding: 1em;
 }
 
 .title {

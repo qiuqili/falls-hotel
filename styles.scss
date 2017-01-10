@@ -1,14 +1,15 @@
 @import 'reset';
 
 body{
-    font-family:Nunito;
+    font-family: Nunito;
 }
 
-li{
-	display: inline;
-	float:right;
-	margin-right:30px;
-	font-weight: 700;
+ul{
+	display: flex;
+	justify-content: flex-end;
+  li{
+	 padding: 1em;
+  }
 }
 
 
@@ -16,19 +17,18 @@ li{
     display: inline-block;
     position: absolute;
     margin-top: 10%;
-    padding:20px;
+    padding: 20px;
     font-weight: 700;
     max-width: 70px;
     font-size: 	25px;
 }
 
 button{
-	background-color:white;
-	border:1px solid;
-	padding:10px 20px;
+	background-color: white;
+	border: 1px solid;
+	padding: 10px 20px;
 	cursor: pointer;
-	font-family:Nunito;
+	font-family: Nunito;
 	font-weight: 800;
-	font-size:15px;
-
+	font-size: 15px;
 }
