@@ -6,15 +6,13 @@ $dark: #474256;
 body {
   font-family: Nunito;
   font-color:$dark;
-
-
 }
 
 ul {
   display: flex;
   justify-content: flex-end;
   li{
-	 padding: 1em;
+	 padding: 0.5em;
   }
 }
 
@@ -23,26 +21,49 @@ ul {
   position: absolute;
   margin-top: 10%;
   padding: 20px;
-  font-weight: 700;
   max-width: 70px;
-  font-size: 	25px;
+   font:{
+    weight: bold;
+    size: 1.1em;
+  }
 }
 
 button {
   background-color: white;
-  border: 1px solid;
-  padding: 10px 20px;
+  border: 0.5px solid;
+  padding: 0.5em;
   cursor: pointer;
-  font-family: Nunito;
-  font-weight: 800;
-  font-size: 15px;
+  margin:0.5em;
+  float:right;
+  font:{
+    family: Nunito;
+    weight: 300light;
+    size: 13px;
+  }
+
 }
 
-.content{
-  height:800px;
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.room{
+  display:flex;
+  flex-direction: column;
+  height:500px;
   background-color: $pink;
-}
+  margin:30px;
+  h1{
 
+    font:{
+      size:1.5em;
+      family:Suez One;
+    }
+  }
+
+}
 
 footer {
   background-color: $dark;
