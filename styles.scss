@@ -1,34 +1,50 @@
 @import 'reset';
+$pink:#feeae2;
+$dark: #474256;
 
-body{
-    font-family: Nunito;
+
+body {
+  font-family: Nunito;
+  font-color:$dark;
+
+
 }
 
-ul{
-	display: flex;
-	justify-content: flex-end;
+ul {
+  display: flex;
+  justify-content: flex-end;
   li{
 	 padding: 1em;
   }
 }
 
-
-.title{
-    display: inline-block;
-    position: absolute;
-    margin-top: 10%;
-    padding: 20px;
-    font-weight: 700;
-    max-width: 70px;
-    font-size: 	25px;
+.title {
+  display: inline-block;
+  position: absolute;
+  margin-top: 10%;
+  padding: 20px;
+  font-weight: 700;
+  max-width: 70px;
+  font-size: 	25px;
 }
 
-button{
-	background-color: white;
-	border: 1px solid;
-	padding: 10px 20px;
-	cursor: pointer;
-	font-family: Nunito;
-	font-weight: 800;
-	font-size: 15px;
+button {
+  background-color: white;
+  border: 1px solid;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: Nunito;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.content{
+  height:800px;
+  background-color: $pink;
+}
+
+
+footer {
+  background-color: $dark;
+  height: 400px;
 }

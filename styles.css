@@ -54,6 +54,7 @@ table {
 
 body {
   font-family: Nunito;
+  font-color: #474256;
 }
 
 ul {
@@ -83,4 +84,14 @@ button {
   font-family: Nunito;
   font-weight: 800;
   font-size: 15px;
+}
+
+.content {
+  height: 800px;
+  background-color: #feeae2;
+}
+
+footer {
+  background-color: #474256;
+  height: 400px;
 }
