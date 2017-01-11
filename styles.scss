@@ -52,16 +52,23 @@ img {
 .room{
   display:flex;
   flex-direction: column;
-  height:500px;
+  align-items: flex-end;
+  height: 500px;
   background-color: $pink;
-  margin:30px;
+  margin: 30px;
   h1{
-
     font:{
-      size:1.5em;
-      family:Suez One;
+      size: 1.6em;
+      family: Suez One;
     }
-  }
+   }
+    p{
+      max-width: 70%;
+    }
+img{
+  width: 70%;
+  margin-top: 1.5em;
+}
 
 }
 

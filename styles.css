@@ -97,14 +97,24 @@ img {
 .room {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   height: 500px;
   background-color: #feeae2;
   margin: 30px;
 }
 
 .room h1 {
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-family: Suez One;
+}
+
+.room p {
+  max-width: 70%;
+}
+
+.room img {
+  width: 70%;
+  margin-top: 1.5em;
 }
 
 footer {
