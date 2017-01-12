@@ -59,7 +59,7 @@ body {
 
 ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
 ul li {
@@ -105,7 +105,7 @@ label {
   position: absolute;
 }
 
-.room {
+.component {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -113,18 +113,18 @@ label {
   margin: 50px;
 }
 
-.room div:first-child {
+.component div:first-child {
   height: 200px;
   display: flex;
 }
 
-.room div:first-child p {
+.component div:first-child p {
   font-size: 1.2rem;
   align-self: flex-end;
   color: #474256;
 }
 
-.room div:last-child .details {
+.component div:last-child .details {
   background-color: #feeae2;
   text-align: center;
   padding: 30px;
