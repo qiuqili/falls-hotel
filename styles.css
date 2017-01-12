@@ -66,13 +66,18 @@ ul li {
   padding: 0.5em;
 }
 
+h1 {
+  font-size: 1.9rem;
+  font-family: Suez One;
+}
+
 .title {
   display: inline-block;
   position: absolute;
   margin-top: 10%;
   padding: 20px;
   max-width: 70px;
-  font-weight: bold;
+  font-weight: light;
   font-size: 1.1em;
 }
 
@@ -84,7 +89,7 @@ button {
   margin: 0.5em;
   float: right;
   font-family: Nunito;
-  font-weight: 300light;
+  font-weight: light;
   font-size: 13px;
 }
 
@@ -94,27 +99,36 @@ img {
   display: block;
 }
 
+label {
+  color: #feeae2;
+  font-size: 7rem;
+  position: absolute;
+}
+
 .room {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  height: 500px;
+  justify-content: space-between;
+  height: auto;
+  margin: 50px;
+}
+
+.room div:first-child {
+  height: 200px;
+  display: flex;
+}
+
+.room div:first-child p {
+  font-size: 1.2rem;
+  align-self: flex-end;
+  color: #474256;
+}
+
+.room div:last-child .details {
   background-color: #feeae2;
-  margin: 30px;
-}
-
-.room h1 {
-  font-size: 1.6em;
-  font-family: Suez One;
-}
-
-.room p {
-  max-width: 70%;
-}
-
-.room img {
-  width: 70%;
-  margin-top: 1.5em;
+  text-align: center;
+  padding: 30px;
+  margin-top: 20px;
 }
 
 footer {

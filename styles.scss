@@ -1,20 +1,29 @@
 @import 'reset';
 $pink:#feeae2;
 $dark: #474256;
-
+$grey:#C8C3BC;
 
 body {
   font-family: Nunito;
-  font-color:$dark;
+  font-color: $dark;
 }
+
 
 ul {
   display: flex;
   justify-content: flex-end;
-  li{
+  li {
 	 padding: 0.5em;
   }
 }
+
+h1 {
+    font:{
+      size: 1.9rem;
+      family: Suez One;
+    }
+   }
+
 
 .title {
   display: inline-block;
@@ -23,24 +32,24 @@ ul {
   padding: 20px;
   max-width: 70px;
    font:{
-    weight: bold;
+    weight: light;
     size: 1.1em;
   }
 }
+
 
 button {
   background-color: white;
   border: 0.5px solid;
   padding: 0.5em;
   cursor: pointer;
-  margin:0.5em;
-  float:right;
+  margin: 0.5em;
+  float: right;
   font:{
     family: Nunito;
-    weight: 300light;
+    weight: light;
     size: 13px;
   }
-
 }
 
 img {
@@ -49,26 +58,35 @@ img {
   display: block;
 }
 
-.room{
-  display:flex;
-  flex-direction: column;
-  align-items: flex-end;
-  height: 500px;
-  background-color: $pink;
-  margin: 30px;
-  h1{
-    font:{
-      size: 1.6em;
-      family: Suez One;
-    }
-   }
-    p{
-      max-width: 70%;
-    }
-img{
-  width: 70%;
-  margin-top: 1.5em;
+label {
+ color: $pink;
+ font-size: 7rem;
+ position: absolute;
 }
+
+.room {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  margin: 50px;
+   div:first-child {
+    height: 200px;
+    display: flex;
+     p {
+      font-size: 1.2rem;
+      align-self: flex-end;
+      color: $dark;
+      }
+    }
+    div:last-child {
+     .details {
+      background-color: $pink;
+      text-align: center;
+      padding: 30px;
+      margin-top: 20px;
+      }
+    }
 
 }
 
