@@ -62,6 +62,8 @@ body {
 ul {
   display: flex;
   justify-content: center;
+  position: fixed;
+  z-index: 100;
 }
 
 ul li {
@@ -150,6 +152,15 @@ span {
 }
 
 footer {
+  padding: 2.2rem;
   background-color: #474256;
   height: 400px;
+}
+
+footer h1 {
+  color: #f9b49c;
+}
+
+footer p {
+  color: #C8C3BC;
 }
