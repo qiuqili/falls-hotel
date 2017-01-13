@@ -6,13 +6,15 @@ $grey:#C8C3BC;
 body {
   font-family: Nunito;
   font-color: $dark;
-}
+  box-sizing: border-box;
+  width: 100%;
+ }
 
 
 ul {
   display: flex;
-  justify-content: space-around;
-  li {
+  justify-content: center;
+   li {
 	 padding: 0.5em;
   }
 }
@@ -23,7 +25,9 @@ h1 {
       family: Suez One;
     }
    }
-
+.content{
+  margin: 0 auto;
+ }
 
 .title {
   display: inline-block;
@@ -58,10 +62,11 @@ img {
   display: block;
 }
 
-label {
+span {
  color: $pink;
  font-size: 7rem;
  position: absolute;
+ z-index: -1;
 }
 
 .component {
@@ -71,13 +76,16 @@ label {
   height: auto;
   margin: 50px;
    div:first-child {
-    height: 200px;
-    display: flex;
+   @extend .component;
+  margin:0;
      p {
       font-size: 1.2rem;
-      align-self: flex-end;
+      text-align: right;
       color: $dark;
-      }
+      padding-left: 50%;
+      margin-top: 10%;;
+
+       }
     }
     div:last-child {
      .details {
@@ -85,6 +93,7 @@ label {
       text-align: center;
       padding: 30px;
       margin-top: 20px;
+
 
       }
     }

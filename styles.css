@@ -55,11 +55,13 @@ table {
 body {
   font-family: Nunito;
   font-color: #474256;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 ul li {
@@ -69,6 +71,10 @@ ul li {
 h1 {
   font-size: 1.9rem;
   font-family: Suez One;
+}
+
+.content {
+  margin: 0 auto;
 }
 
 .title {
@@ -99,13 +105,14 @@ img {
   display: block;
 }
 
-label {
+span {
   color: #feeae2;
   font-size: 7rem;
   position: absolute;
+  z-index: -1;
 }
 
-.component {
+.component, .component div:first-child {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -114,14 +121,15 @@ label {
 }
 
 .component div:first-child {
-  height: 200px;
-  display: flex;
+  margin: 0;
 }
 
 .component div:first-child p {
   font-size: 1.2rem;
-  align-self: flex-end;
+  text-align: right;
   color: #474256;
+  padding-left: 50%;
+  margin-top: 10%;
 }
 
 .component div:last-child .details {
