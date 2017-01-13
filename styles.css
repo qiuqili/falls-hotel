@@ -69,7 +69,7 @@ ul li {
 }
 
 h1 {
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-family: Suez One;
 }
 
@@ -87,16 +87,19 @@ h1 {
   font-size: 1.1em;
 }
 
-button {
-  background-color: white;
+.btn, .book, .component div:last-child .details button {
+  background-color: transparent;
   border: 0.5px solid;
-  padding: 0.5em;
+  padding: 0.6rem;
   cursor: pointer;
   margin: 0.5em;
-  float: right;
   font-family: Nunito;
-  font-weight: light;
+  font-weight: 300;
   font-size: 13px;
+}
+
+.book {
+  float: right;
 }
 
 img {
@@ -132,11 +135,18 @@ span {
   margin-top: 10%;
 }
 
+.component div:last-child {
+  margin-top: 2rem;
+}
+
 .component div:last-child .details {
   background-color: #feeae2;
   text-align: center;
   padding: 30px;
-  margin-top: 20px;
+}
+
+.component div:last-child .details button {
+  margin-top: 1rem;
 }
 
 footer {

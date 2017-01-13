@@ -21,7 +21,7 @@ ul {
 
 h1 {
     font:{
-      size: 1.9rem;
+      size: 2rem;
       family: Suez One;
     }
    }
@@ -41,20 +41,24 @@ h1 {
   }
 }
 
-
-button {
-  background-color: white;
+.btn{
+  background-color: transparent;
   border: 0.5px solid;
-  padding: 0.5em;
+  padding: 0.6rem;
   cursor: pointer;
   margin: 0.5em;
-  float: right;
-  font:{
+   font:{
     family: Nunito;
-    weight: light;
+    weight: 300;
     size: 13px;
   }
 }
+
+.book{
+ @extend .btn;
+float:right;
+}
+
 
 img {
   width: 100%;
@@ -88,13 +92,15 @@ span {
        }
     }
     div:last-child {
+      margin-top: 2rem;
      .details {
       background-color: $pink;
       text-align: center;
       padding: 30px;
-      margin-top: 20px;
-
-
+        button{
+        @extend .btn;
+        margin-top: 1rem;
+        }
       }
     }
 
