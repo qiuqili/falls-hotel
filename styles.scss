@@ -11,12 +11,11 @@ body {
   width: 100%;
  }
 
-.btn{
+.btn {
   background-color: transparent;
   border: 0.5px solid;
   cursor: pointer;
-  margin: 0.5em;
-   font:{
+     font:{
     family: Nunito;
     weight: 300;
     size: 13px;
@@ -34,7 +33,7 @@ ul {
    li {
     padding: 0.5em;
   }
-  button{
+  button {
     @extend .btn;
     float:right;
     padding: 0.2rem 0.5rem;
@@ -47,7 +46,7 @@ h1 {
       family: Suez One;
     }
    }
-.content{
+.content {
   margin: 0 auto;
  }
 
@@ -127,5 +126,10 @@ footer {
 input{
     margin-top: 1rem;
     height: 2rem;
+
 }
+ :nth-child(4) {
+      @extend .btn;
+      color: $daisy;
+    }
 }
