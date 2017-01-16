@@ -59,15 +59,32 @@ body {
   width: 100%;
 }
 
+.btn, ul button, .component div:last-child .details button {
+  background-color: transparent;
+  border: 0.5px solid;
+  cursor: pointer;
+  margin: 0.5em;
+  font-family: Nunito;
+  font-weight: 300;
+  font-size: 13px;
+}
+
 ul {
   display: flex;
   justify-content: center;
   position: fixed;
   z-index: 100;
+  background-color: white;
+  opacity: 0.8;
 }
 
 ul li {
   padding: 0.5em;
+}
+
+ul button {
+  float: right;
+  padding: 0.2rem 0.5rem;
 }
 
 h1 {
@@ -87,21 +104,6 @@ h1 {
   max-width: 70px;
   font-weight: light;
   font-size: 1.1em;
-}
-
-.btn, .book, .component div:last-child .details button {
-  background-color: transparent;
-  border: 0.5px solid;
-  padding: 0.6rem;
-  cursor: pointer;
-  margin: 0.5em;
-  font-family: Nunito;
-  font-weight: 300;
-  font-size: 13px;
-}
-
-.book {
-  float: right;
 }
 
 img {
@@ -149,6 +151,7 @@ span {
 
 .component div:last-child .details button {
   margin-top: 1rem;
+  padding: 0.5rem;
 }
 
 footer {
