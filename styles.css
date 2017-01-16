@@ -121,7 +121,6 @@ span {
 .component, .component div:first-child {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: auto;
   margin: 50px;
 }
