@@ -52,11 +52,12 @@ table {
   border-spacing: 0;
 }
 
-body {
+html {
   font-family: Nunito;
   font-color: #474256;
   box-sizing: border-box;
   width: 100%;
+  font-size: 16px;
 }
 
 .btn, ul button, .component div:last-child .details button, footer :nth-child(4) {
@@ -65,7 +66,7 @@ body {
   cursor: pointer;
   font-family: Nunito;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 
 ul {
@@ -75,10 +76,12 @@ ul {
   z-index: 100;
   background-color: white;
   opacity: 0.8;
+  width: 100%;
 }
 
 ul li {
-  padding: 0.5em;
+  padding: 0.3rem;
+  font-size: 0.9rem;
 }
 
 ul button {
@@ -102,7 +105,7 @@ h1 {
   padding: 20px;
   max-width: 70px;
   font-weight: light;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 img {
@@ -122,7 +125,7 @@ span {
   display: flex;
   flex-direction: column;
   height: auto;
-  margin: 50px;
+  margin: 3rem;
 }
 
 .component div:first-child {
@@ -130,7 +133,7 @@ span {
 }
 
 .component div:first-child p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: right;
   color: #474256;
   padding-left: 50%;
@@ -147,6 +150,11 @@ span {
   padding: 30px;
 }
 
+.component div:last-child .details p {
+  font-size: 0.7rem;
+  line-height: 1.3;
+}
+
 .component div:last-child .details button {
   margin-top: 1rem;
   padding: 0.5rem;
@@ -155,7 +163,7 @@ span {
 footer {
   padding: 2.2rem;
   background-color: #474256;
-  height: 400px;
+  height: 15rem;
 }
 
 footer h1 {
@@ -173,4 +181,39 @@ footer input {
 
 footer :nth-child(4) {
   color: #f9b49c;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1366px) {
+  html {
+    font-size: 33px;
+  }
+  .component, .component div:first-child {
+    flex-direction: row;
+  }
+  .component div:first-child {
+    flex-direction: column;
+  }
+  .component div:first-child p {
+    text-align: left;
+    width: 70%;
+    padding-left: 0;
+  }
+  .component div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .component div:last-child .details {
+    width: 15rem;
+    height: 15rem;
+  }
+  .component div:last-child .details button {
+    margin-top: 2rem;
+  }
 }
