@@ -60,7 +60,7 @@ html {
   font-size: 16px;
 }
 
-.btn, ul button, .component div:last-child .details button, footer :nth-child(4) {
+.btn, ul button, .component div .details button, footer :nth-child(4) {
   background-color: transparent;
   border: 0.5px solid;
   cursor: pointer;
@@ -90,7 +90,7 @@ ul button {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-family: Suez One;
 }
 
@@ -121,18 +121,14 @@ span {
   z-index: -1;
 }
 
-.component, .component div:first-child {
+.component, .component div {
   display: flex;
   flex-direction: column;
   height: auto;
   margin: 3rem;
 }
 
-.component div:first-child {
-  margin: 0;
-}
-
-.component div:first-child p {
+.component div p {
   font-size: 1.1rem;
   text-align: right;
   color: #474256;
@@ -140,22 +136,18 @@ span {
   margin-top: 10%;
 }
 
-.component div:last-child {
-  margin-top: 2rem;
-}
-
-.component div:last-child .details {
+.component div .details {
   background-color: #feeae2;
   text-align: center;
   padding: 30px;
 }
 
-.component div:last-child .details p {
+.component div .details p {
   font-size: 0.7rem;
   line-height: 1.3;
 }
 
-.component div:last-child .details button {
+.component div .details button {
   margin-top: 1rem;
   padding: 0.5rem;
 }
@@ -193,27 +185,31 @@ footer :nth-child(4) {
   html {
     font-size: 33px;
   }
-  .component, .component div:first-child {
-    flex-direction: row;
+  .component, .component div {
+    height: 38rem;
   }
-  .component div:first-child {
-    flex-direction: column;
-  }
-  .component div:first-child p {
+  .component div p {
     text-align: left;
     width: 70%;
     padding-left: 0;
+    margin-top: 5rem;
   }
-  .component div:last-child {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  .component div:last-child .details {
-    width: 15rem;
+  .component div img {
+    width: 25rem;
     height: 15rem;
+    align-self: flex-end;
+    margin-top: 3rem;
   }
-  .component div:last-child .details button {
+  .component div .details {
+    width: 16rem;
+    height: 8rem;
+    position: absolute;
+    margin-top: 24rem;
+  }
+  .component div .details p {
+    margin: auto;
+  }
+  .component div .details button {
     margin-top: 2rem;
   }
 }

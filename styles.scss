@@ -44,7 +44,7 @@ ul {
 
 h1 {
     font:{
-      size: 2rem;
+      size: 2.3rem;
       family: Suez One;
     }
    }
@@ -82,9 +82,9 @@ span {
   flex-direction: column;
   height: auto;
   margin: 3rem;
-   div:first-child {
+   div {
    @extend .component;
-  margin:0;
+
      p {
       font-size: 1.1rem;
       text-align: right;
@@ -92,9 +92,7 @@ span {
       padding-left: 50%;
       margin-top: 10%;;
        }
-    }
-    div:last-child {
-      margin-top: 2rem;
+
      .details {
       background-color: $pink;
       text-align: center;
@@ -148,26 +146,33 @@ input{
     font-size: 33px;
   }
 
-  .component{
-    flex-direction: row;
+  .component  {
+    height: 38rem;
 
-  div:first-child{
-    flex-direction: column;
-    p{
+    div{
+
+    p {
       text-align: left;
       width: 70%;
       padding-left: 0;
+      margin-top: 5rem;
      }
-  }
-    div:last-child {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    .details{
-      width: 15rem;
-      height: 15rem;
 
-        button{
+    img{
+      width: 25rem;
+      height: 15rem;
+      align-self: flex-end;
+      margin-top: 3rem;
+    }
+    .details{
+      width: 16rem;
+      height: 8rem;
+      position: absolute;
+      margin-top: 24rem;
+        p{
+          margin: auto;
+        }
+          button{
         margin-top: 2rem;
           }
        }
