@@ -4,11 +4,14 @@ $dark: #474256;
 $grey: #C8C3BC;
 $daisy: #f9b49c;
 
+*  {
+  box-sizing: border-box;
+}
+
+
 html {
   font-family: Nunito;
   font-color: $dark;
-  box-sizing: border-box;
-  width: 100%;
   font-size: 16px;
  }
 
@@ -80,24 +83,23 @@ span {
 .component {
   display: flex;
   flex-direction: column;
-  height: auto;
-  margin: 3rem;
-   div {
-   @extend .component;
-
+  justify-content: space-between;
+  height: 45rem;
+  padding: 2rem;
      p {
       font-size: 1.1rem;
       text-align: right;
       color: $dark;
       padding-left: 50%;
-      margin-top: 10%;;
+      margin-top: 20%;;
        }
 
      .details {
       background-color: $pink;
       text-align: center;
-      padding: 30px;
-      p {
+      padding: 1rem;
+      order: 2;
+      article {
       font-size: 0.7rem;
       line-height:1.3;
      }
@@ -106,7 +108,6 @@ span {
         margin-top: 1rem;
         padding: 0.5rem;
         }
-      }
     }
 }
 
@@ -146,30 +147,34 @@ input{
     font-size: 33px;
   }
 
-  .component  {
-    height: 38rem;
+  ul{
 
-    div{
-
+    padding:1rem;
+    justify-content: flex-end;
+  }
+    .component  {
+    height: auto;
+    width: 50rem;
+    margin: auto;
     p {
       text-align: left;
-      width: 70%;
+      width:60%;
       padding-left: 0;
       margin-top: 5rem;
      }
 
     img{
-      width: 25rem;
-      height: 15rem;
+      width: 30rem;
+      height: 20rem;
       align-self: flex-end;
       margin-top: 3rem;
+
     }
     .details{
-      width: 16rem;
-      height: 8rem;
+      width: 20rem;
       position: absolute;
-      margin-top: 24rem;
-        p{
+      margin-top: 18rem;
+        article{
           margin: auto;
         }
           button{
@@ -177,6 +182,5 @@ input{
           }
        }
     }
-}
 
 }

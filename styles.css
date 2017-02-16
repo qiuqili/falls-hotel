@@ -52,15 +52,17 @@ table {
   border-spacing: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: Nunito;
   font-color: #474256;
-  box-sizing: border-box;
-  width: 100%;
   font-size: 16px;
 }
 
-.btn, ul button, .component div .details button, footer :nth-child(4) {
+.btn, ul button, .component .details button, footer :nth-child(4) {
   background-color: transparent;
   border: 0.5px solid;
   cursor: pointer;
@@ -121,33 +123,35 @@ span {
   z-index: -1;
 }
 
-.component, .component div {
+.component {
   display: flex;
   flex-direction: column;
-  height: auto;
-  margin: 3rem;
+  justify-content: space-between;
+  height: 45rem;
+  padding: 2rem;
 }
 
-.component div p {
+.component p {
   font-size: 1.1rem;
   text-align: right;
   color: #474256;
   padding-left: 50%;
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
-.component div .details {
+.component .details {
   background-color: #feeae2;
   text-align: center;
-  padding: 30px;
+  padding: 1rem;
+  order: 2;
 }
 
-.component div .details p {
+.component .details article {
   font-size: 0.7rem;
   line-height: 1.3;
 }
 
-.component div .details button {
+.component .details button {
   margin-top: 1rem;
   padding: 0.5rem;
 }
@@ -185,31 +189,36 @@ footer :nth-child(4) {
   html {
     font-size: 33px;
   }
-  .component, .component div {
-    height: 38rem;
+  ul {
+    padding: 1rem;
+    justify-content: flex-end;
   }
-  .component div p {
+  .component {
+    height: auto;
+    width: 50rem;
+    margin: auto;
+  }
+  .component p {
     text-align: left;
-    width: 70%;
+    width: 60%;
     padding-left: 0;
     margin-top: 5rem;
   }
-  .component div img {
-    width: 25rem;
-    height: 15rem;
+  .component img {
+    width: 30rem;
+    height: 20rem;
     align-self: flex-end;
     margin-top: 3rem;
   }
-  .component div .details {
-    width: 16rem;
-    height: 8rem;
+  .component .details {
+    width: 20rem;
     position: absolute;
-    margin-top: 24rem;
+    margin-top: 18rem;
   }
-  .component div .details p {
+  .component .details article {
     margin: auto;
   }
-  .component div .details button {
+  .component .details button {
     margin-top: 2rem;
   }
 }
