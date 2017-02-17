@@ -62,7 +62,7 @@ html {
   font-size: 16px;
 }
 
-.btn, ul button, .component .details button, footer :nth-child(4) {
+.btn, ul button, .component .details button, footer .connect :nth-child(3) {
   background-color: transparent;
   border: 0.5px solid;
   cursor: pointer;
@@ -170,12 +170,20 @@ footer p {
   color: #C8C3BC;
 }
 
-footer input {
+footer .connect {
+  margin-top: 3rem;
+}
+
+footer .connect h3 {
+  color: #f9b49c;
+}
+
+footer .connect input {
   margin-top: 1rem;
   height: 2rem;
 }
 
-footer :nth-child(4) {
+footer .connect :nth-child(3) {
   color: #f9b49c;
 }
 

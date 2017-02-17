@@ -4,7 +4,7 @@ $dark: #474256;
 $grey: #C8C3BC;
 $daisy: #f9b49c;
 
-*  {
+* {
   box-sizing: border-box;
 }
 
@@ -121,14 +121,21 @@ footer {
   p{
     color: $grey;
   }
+  .connect{
+    margin-top: 3rem;
+  h3{
+    color: $daisy;
+  }
 input{
     margin-top: 1rem;
     height: 2rem;
 }
- :nth-child(4) {
+ :nth-child(3) {
       @extend .btn;
       color: $daisy;
     }
+  }
+
 }
 
 
@@ -163,13 +170,13 @@ input{
       margin-top: 5rem;
      }
 
-    img{
+    img {
       width: 30rem;
       height: 20rem;
       align-self: flex-end;
       margin-top: 3rem;
-
     }
+
     .details{
       width: 20rem;
       position: absolute;
