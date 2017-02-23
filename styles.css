@@ -92,7 +92,7 @@ ul button {
 }
 
 h1 {
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-family: Suez One;
 }
 
@@ -103,11 +103,14 @@ h1 {
 .title {
   display: inline-block;
   position: absolute;
-  margin-top: 10%;
-  padding: 20px;
+  padding: 2rem;
   max-width: 70px;
   font-weight: light;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
+}
+
+.title h1 {
+  font-size: 1.4rem;
 }
 
 img {
@@ -195,11 +198,14 @@ footer .connect :nth-child(3) {
 
 @media (min-width: 1366px) {
   html {
-    font-size: 33px;
+    font-size: 35px;
   }
   ul {
     padding: 1rem;
     justify-content: flex-end;
+  }
+  .title {
+    margin-top: 5rem;
   }
   .component {
     height: auto;
@@ -222,6 +228,7 @@ footer .connect :nth-child(3) {
     width: 20rem;
     position: absolute;
     margin-top: 18rem;
+    z-index: 10;
   }
   .component .details article {
     margin: auto;
