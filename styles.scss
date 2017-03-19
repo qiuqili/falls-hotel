@@ -11,7 +11,7 @@ $daisy: #f9b49c;
 
 html {
   font-family: Nunito;
-  font-color: $dark;
+  color: $dark;
   font-size: 16px;
  }
 
@@ -28,7 +28,7 @@ html {
 
 ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   position: fixed;
   z-index: 100;
   background-color: white;
@@ -58,7 +58,7 @@ h1 {
 .title {
   display: inline-block;
   position: absolute;
-  padding: 2rem;
+  padding: 4rem 2rem;
   max-width: 70px;
    font:{
     weight: light;
@@ -72,8 +72,9 @@ h1 {
 img {
   width: 100%;
   height: auto;
-  display: block;
+  margin-top: 3rem;
 }
+
 
 span {
  color: $pink;
@@ -153,11 +154,11 @@ input{
 @media (min-width: 1130px) {
 
  html {
-    font-size: 35px;
+    font-size: 24px;
   }
 
   ul{
-    padding:1rem;
+    padding: 0.5rem;
     justify-content: flex-end;
   }
   .title{
